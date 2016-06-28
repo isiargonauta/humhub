@@ -11,6 +11,11 @@ It's perfect for individual:
 - Enterprise Social Networks
 - Private Social Networks
 
+Perfecto para:
+- Intranet Social
+- Redes sociales de empresa
+- Redes sociales privadas
+
 More information:
 - [Homepage & Demo](http://www.humhub.org)
 - [Documentation & Class Reference](http://www.humhub.org/docs)

@@ -27,4 +27,8 @@ nbproject
 themes/*
 !themes/HumHub
 
+docker-compose.yml
+Dockerfile
+.env
+
 favicon.ico
