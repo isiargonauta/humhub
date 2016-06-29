@@ -7,6 +7,13 @@ FROM codemix/yii2-base:2.0.8-php7-apache
 # that are not already in the yii2-base image.
 COPY composer.json /var/www/html/
 COPY composer.lock /var/www/html/
+# Install needed php extensions: ldap
+RUN \
+  apt-get update && \
+  apt-get install libldap2-dev -y && \
+  rm -rf /var/lib/apt/lists/* && \
+  docker-php-ext-configure ldap --with-libdir=lib/x86_64-linux-gnu/ && \
+  docker-php-ext-install ldap
 RUN composer self-update --no-progress && \
     composer install --no-progress
 
@@ -16,7 +23,7 @@ COPY . /var/www/html
 # The following directories are .dockerignored to not pollute the docker images
 # with local logs and published assets from development. So we need to create
 # empty dirs and set right permissions inside the container.
-RUN mkdir runtime web/assets \
+RUN mkdir runtime \
     && chown www-data:www-data runtime web/assets
 
 # Expose everything under /var/www (vendor + html)
