@@ -16,8 +16,13 @@ Perfecto para:
 - Redes sociales de empresa
 - Redes sociales privadas
 
-More information / Más información :
+More information :
 - [Homepage & Demo](http://www.humhub.org)
 - [Documentation & Class Reference](http://www.humhub.org/docs)
+- [Licence](http://www.humhub.org/licences)
+
+Más información :
+- [Homepage & Demo](http://www.humhub.org)
+- [Documentación & Referencia de clases](http://www.humhub.org/docs)
 - [Licence](http://www.humhub.org/licences)
 
