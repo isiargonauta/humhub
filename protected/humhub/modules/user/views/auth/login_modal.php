@@ -8,12 +8,12 @@ use yii\helpers\Url;
     <div class="modal-content">
         <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <h4 class="modal-title" id="myModalLabel"><strong>Join</strong> the network</h4>
+            <h4 class="modal-title" id="myModalLabel"><?php echo Yii::t('UserModule.views_auth_login','<strong>Join</strong> the network'); ?></h4>
         </div>
         <div class="modal-body">
             <br/>
 
-            <?php if ($canRegister) : ?>
+            <?php if (isset($canRegister)) : ?>
                 <div class="text-center">
                     <ul id="tabs" class="nav nav-tabs tabs-center" data-tabs="tabs">
                         <li class="<?php echo (!isset($_POST['AccountRegister'])) ? "active" : ""; ?> tab-login"><a
